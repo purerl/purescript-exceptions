@@ -7,7 +7,7 @@ error(S) -> S.
 
 message(E) -> E.
 
-stackImpl(Just,Nothing,E) -> Nothing.
+stackImpl(_Just,Nothing,_E) -> Nothing.
 
 throwException(E) -> fun() ->
   erlang:error(E)

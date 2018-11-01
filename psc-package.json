@@ -1,10 +1,10 @@
 {
     "name": "exceptions",
-    "set": "erl-0.10.5",
+    "set": "erl-0.12.0-20180919",
     "source": "https://github.com/purerl/package-sets.git",
     "depends": [
         "maybe",
         "either",
-        "eff"
+        "effect"
     ]
 }

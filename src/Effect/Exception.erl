@@ -6,7 +6,7 @@ showErrorImpl(E) -> message(E).
 error(S) -> S.
 
 message(E) when is_binary(E) -> E;
-message(E) -> io_lib:format("~p", [E]).
+message(E) -> unicode:characters_to_binary(io_lib:format("~p", [E]), utf8).
 
 name(_E) -> <<"Error">>.
 
